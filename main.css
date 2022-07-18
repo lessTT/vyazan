@@ -1,0 +1,288 @@
+*{ 
+	/* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0 auto;
+    /* max-width: 1920px; */
+	max-width: 1000px;
+}
+
+/* Golos / main text */
+@font-face {
+    font-family: "Golos", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./fonts/Golos/Golos-Text_Regular.woff2) format("woff2"),
+         url(./fonts/Golos/Golos-Text_Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Golos", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+	src:
+		url(./fonts/Golos/Golos-Text_DemiBold.woff2) format("woff2"),
+		url(./fonts/Golos/Golos-Text_DemiBold.woff) format("woff");
+}
+
+/* Vetrino / head text */
+@font-face {
+    font-family: "Vetrino", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+	src: url(./fonts/Vertino/vetrino.woff2) format('woff2'),
+         url(./fonts/Vertino/vetrino.woff) format("woff"),
+		 url(./fonts/Vertino/vetrino.otf) format("opentype"),
+		 url(./fonts/Vertino/vetrino.ttf) format("truetype");
+}
+
+body {
+    font: 400 16px/24px "Golos", Arial, sans-serif;
+    font-style: normal;
+    color: #000;
+}
+
+header {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 25px;
+    gap: 8px;
+    margin-bottom: 45px;
+}
+
+footer {
+	display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+	align-items: flex-start;
+    padding: 32px 25px;
+	gap: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
+    font: 400 80px/88px "Vetrino", Arial, sans-serif;
+}
+
+h3 {
+    font: 400 42px/56px "Vetrino", Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.main-container {
+    padding: 0 25px;
+	margin-bottom: 46px;
+}
+
+.logo {
+    margin-right: 32px;
+    height: 32px;
+    width: 32px;
+}
+
+.menu {
+    flex-grow: 1;
+  }
+
+.menu ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+  }
+
+  .menu li {
+    margin-right: 20px;
+  }
+  .menu li:last-child {
+    margin-right: 0;
+  }
+
+.active {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header-icons {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    align-items: baseline;
+}
+
+.header-icons a {
+    padding: 8px;
+    max-width: 28px;
+    max-height: 28px;
+}
+
+.header-icons a:first-child {
+    margin-right: 8px;
+}
+
+.title-page {
+    margin-bottom: 25px;
+}
+
+.tags {
+    margin-bottom: 11px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 11px;
+}
+
+.tag {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1px 15px 2px;
+    gap: 8px;
+}
+
+.season-ss {
+    background: linear-gradient(90deg, #FFD600 0%, #FAD703 33.85%, #00FF85 100%);
+    border-radius: 500px;
+}
+
+.year-22 {
+    background: #56CCF2;
+    border-radius: 500px;
+}
+
+.title-img {
+    margin-bottom: 80px;
+}
+
+.title-img, 
+.catalog-title {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.title-img img{
+    min-height: 300px;
+    max-height: 415px;
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+.title-img-woman {
+    border-radius: 500px 500px 0 0;
+}
+
+.catalog-title {
+	margin-bottom: 40px;
+}
+
+.catalog-title-img {
+	flex-grow: 1;
+    object-fit: cover;
+    min-width: 470px;
+    min-height: 640px;
+}
+
+.catalog-info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-self: stretch;
+	flex-grow: 1;
+}
+
+.catalog-info-text p { 
+    margin-right: 2.5em;
+}
+
+.catalog-info-product {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.product {
+	flex-grow: 1;
+	flex-basis: 230px;
+}
+
+.product img {
+    margin-bottom: 10px;
+	object-fit: cover;
+	width: 100%;
+}
+
+.catalog-cards img {
+	margin-bottom: 3px;
+}
+
+.product-img-l {
+    height: 345px;
+}
+
+.product-img-m {
+    height: 310px;
+}
+
+.product-img-s {
+    height: 280px;
+}
+
+.product-title-name {
+    font: 600 16px/24px Golos, Arial, sans-serif;
+}
+
+.footer-info {
+	display: flex;
+	flex-flow: row nowrap;
+	min-width: 50%;
+	gap: 10px;
+}
+
+.copyright-phone{
+	flex-grow: 1;
+	min-width: 230px;
+}
+
+.address{
+	flex-grow: 2;
+}
+
+.social {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 20px;
+
+}
+
+.social img {
+	height: 24px;
+	width: 24px;
+}
+
+
+/* @media (min-width: 1001px) {
+	.title-img img{
+		max-height: 615px;
+	}
+	.product img {
+		height: calc(100/8)
+	}
+  } */
