@@ -11,7 +11,7 @@ html {
 
 /* Golos, main text */
 @font-face {
-	font-family: "Golos", Arial, sans-serif;
+	font-family: "Golos";
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
@@ -20,7 +20,7 @@ html {
 }
 
 @font-face {
-	font-family: "Golos", Arial, sans-serif;
+	font-family: "Golos";
 	font-style: normal;
 	font-weight: 600;
 	font-display: swap;
@@ -31,7 +31,7 @@ html {
 
 /* Vetrino, head text */
 @font-face {
-	font-family: "Vetrino", Arial, sans-serif;
+	font-family: "Vetrino";
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
