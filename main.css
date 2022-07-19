@@ -36,9 +36,9 @@ html {
 	font-weight: 400;
 	font-display: swap;
 	src: url(./fonts/Vertino/vetrino.woff2) format("woff2"),
-		url(./fonts/Vertino/vetrino.woff) format("woff"),
-		url(./fonts/Vertino/vetrino.otf) format("opentype"),
-		url(./fonts/Vertino/vetrino.ttf) format("truetype");
+		 url(./fonts/Vertino/vetrino.woff) format("woff"),
+		 url(./fonts/Vertino/vetrino.otf) format("opentype"),
+		 url(./fonts/Vertino/vetrino.ttf) format("truetype");
 }
 
 body {
@@ -78,6 +78,10 @@ h1 {
 h3 {
 	font: 400 42px/56px "Vetrino", Arial, sans-serif;
 	margin-bottom: 10px;
+}
+
+img {
+	display: block;
 }
 
 .main-container {
@@ -193,7 +197,7 @@ h3 {
 
 .catalog-title-img {
 	flex-grow: 1;
-	object-fit: cover;
+	/* object-fit: cover; */
 	min-width: 470px;
 	min-height: 640px;
 }
@@ -224,12 +228,8 @@ h3 {
 
 .product img {
 	margin-bottom: 10px;
-	object-fit: cover;
+	/* object-fit: cover; */
 	width: 100%;
-}
-
-.catalog-cards img {
-	margin-bottom: 3px;
 }
 
 .product-img-l {
@@ -268,20 +268,9 @@ h3 {
 	display: flex;
 	flex-flow: row nowrap;
 	gap: 20px;
-
 }
 
 .social img {
 	height: 24px;
 	width: 24px;
 }
-
-
-/* @media (min-width: 1001px) {
-	.title-img img{
-		max-height: 615px;
-	}
-	.product img {
-		height: calc(100/8)
-	}
-  } */
