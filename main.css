@@ -5,7 +5,6 @@
 
 html {
 	margin: 0 auto;
-	/* max-width: 1920px; */
 	max-width: 1000px;
 }
 
@@ -126,8 +125,8 @@ img {
 
 .header-icons a {
 	padding: 8px;
-	max-width: 28px;
-	max-height: 28px;
+	width: 28px;
+	height: 28px;
 }
 
 .header-icons a:first-child {
@@ -158,12 +157,12 @@ img {
 }
 
 .season-ss {
-	background: linear-gradient(90deg, #FFD600 0%, #FAD703 33.85%, #00FF85 100%);
+	background: linear-gradient(90deg, #ffd600 0%, #fad703 33.85%, #00ff85 100%);
 	border-radius: 500px;
 }
 
 .year-22 {
-	background: #56CCF2;
+	background: #56ccf2;
 	border-radius: 500px;
 }
 
@@ -231,7 +230,7 @@ img {
 	object-fit: cover;
 	width: 100%;
 	border-radius: 4px;
-	background-color: #EBEBEB;
+	background-color: #ebebeb;
 }
 
 .product-img-l {
