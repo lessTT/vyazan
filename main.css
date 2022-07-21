@@ -15,7 +15,7 @@ html {
 	font-weight: 400;
 	font-display: swap;
 	src: url(./fonts/Golos/Golos-Text_Regular.woff2) format("woff2"),
-		url(./fonts/Golos/Golos-Text_Regular.woff) format("woff");
+		 url(./fonts/Golos/Golos-Text_Regular.woff) format("woff");
 }
 
 @font-face {
@@ -23,9 +23,8 @@ html {
 	font-style: normal;
 	font-weight: 600;
 	font-display: swap;
-	src:
-		url(./fonts/Golos/Golos-Text_DemiBold.woff2) format("woff2"),
-		url(./fonts/Golos/Golos-Text_DemiBold.woff) format("woff");
+	src: url(./fonts/Golos/Golos-Text_DemiBold.woff2) format("woff2"),
+		 url(./fonts/Golos/Golos-Text_DemiBold.woff) format("woff");
 }
 
 /* Vetrino, head text */
