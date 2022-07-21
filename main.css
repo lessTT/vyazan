@@ -108,6 +108,12 @@ img {
 	margin-right: 20px;
 }
 
+.menu li>a:hover,  
+.copyright-phone a:hover{
+	opacity: .6;
+	transition: opacity 0.2s;
+}
+
 .menu li:last-child {
 	margin-right: 0;
 }
@@ -123,13 +129,13 @@ img {
 	align-items: baseline;
 }
 
-.header-icons a {
+.header-icons div {
 	padding: 8px;
 	width: 28px;
 	height: 28px;
 }
 
-.header-icons a:first-child {
+.header-icons div:first-child {
 	margin-right: 8px;
 }
 
@@ -245,6 +251,13 @@ img {
 	height: 280px;
 }
 
+.product-title a:hover {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	display: inline-block;
+	margin-bottom: -1px;
+	opacity: .6;
+}
+
 .product-title-name {
 	font: 600 16px/24px Golos, Arial, sans-serif;
 }
@@ -263,6 +276,12 @@ img {
 
 .address {
 	flex-grow: 2;
+}
+
+.header-icon a:hover,
+.footer-social-icon a:hover {
+	opacity: .6;
+	transition: opacity 0.2s;
 }
 
 .social {
