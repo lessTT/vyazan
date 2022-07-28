@@ -6,6 +6,7 @@
 html {
 	margin: 0 auto;
 	max-width: 1000px;
+	font-size: 16px;
 }
 
 /* Golos, main text */
@@ -82,6 +83,10 @@ img {
 	display: block;
 }
 
+li {
+	list-style-type: none;
+}
+
 .main-container {
 	padding: 0 25px;
 	margin-bottom: 46px;
@@ -97,23 +102,17 @@ img {
 	flex-grow: 1;
 }
 
-.menu ul {
-	display: flex;
-	flex-flow: row nowrap;
-	list-style: none;
+.menu a {
+	margin-right: 16px;
 }
 
-.menu li {
-	margin-right: 20px;
-}
-
-.menu li>a:hover,  
+.menu a:hover,  
 .copyright-phone a:hover{
 	opacity: .6;
 	transition: opacity 0.2s;
 }
 
-.menu li:last-child {
+.menu a:last-child {
 	margin-right: 0;
 }
 
@@ -126,9 +125,10 @@ img {
 	flex-flow: row nowrap;
 	position: relative;
 	align-items: baseline;
+	gap: 8px;
 }
 
-.header-icons div {
+.header-icons li {
 	padding: 8px;
 	width: 28px;
 	height: 28px;
@@ -161,22 +161,23 @@ img {
 	gap: 8px;
 }
 
-.season-ss {
+.season {
 	background: linear-gradient(90deg, #ffd600 0%, #fad703 33.85%, #00ff85 100%);
 	border-radius: 500px;
 }
 
-.year-22 {
+.year {
 	background: #56ccf2;
 	border-radius: 500px;
 }
 
 .title-img {
-	margin-bottom: 80px;
+	margin-bottom: 79px;
+	width: 100%;
 }
 
 .title-img,
-.catalog-title {
+.catalog-preview {
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: flex-start;
@@ -195,15 +196,18 @@ img {
 	border-radius: 500px 500px 0 0;
 }
 
-.catalog-title {
-	margin-bottom: 40px;
+.catalog {
+	display: flex;
+    flex-direction: column;
+    gap: 41px;
 }
 
-.catalog-title-img {
+.catalog-preview-img {
 	flex-grow: 1;
 	object-fit: cover;
-	min-width: 470px;
-	min-height: 640px;
+	width: 50%;
+    max-width: 470px;
+    min-height: 640px;
 }
 
 .catalog-info {
@@ -243,11 +247,13 @@ img {
 }
 
 .product-img-m {
-	height: 310px;
+	height: 84.46%;
+	max-height: 310px;
 }
 
 .product-img-s {
-	height: 280px;
+	height: 77.13%;
+	max-height: 280px;
 }
 
 .product-title a:hover {
@@ -278,7 +284,7 @@ img {
 }
 
 .header-icon a:hover,
-.footer-social-icon a:hover {
+.social li>a:hover {
 	opacity: .6;
 	transition: opacity 0.2s;
 }
